@@ -7,3 +7,17 @@
 
 ה TUPLE מתנהג כמו רשימה אך לא ניתן לשנות בו ערכים. נגדיר tuple ע"י שימוש ב ()tuple
 
+
+
+userInput = int(input('Please enter an odd number: '))
+start = -1
+for i in range((userInput//2)+1):
+    start +=2
+    levels = '*' * start
+    print(levels)
+
+newStart = userInput
+for i in range(userInput//2):
+    newStart -= 2
+    revLevels = '*' * newStart
+    print(revLevels)
