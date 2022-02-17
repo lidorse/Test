@@ -16,6 +16,3 @@ def postId(ID):
     response = json.loads(response.content)
     getPostById = Post(response)
     return getPostById
-
-print(postId(5))
-
