@@ -14,13 +14,18 @@
 
 userInput = int(input('Please enter an odd number: '))
 start = -1
+numOfSpaces = userInput
 for i in range((userInput//2)+1):
     start +=2
-    levels = '*' * start
+    numOfSpaces -= 1
+    space = '-' * numOfSpaces
+    levels = space + ('*' * start)
     print(levels)
 
 newStart = userInput
 for i in range(userInput//2):
     newStart -= 2
-    revLevels = '*' * newStart
+    newSpace = '-' * (numOfSpaces+1)
+    numOfSpaces += 1
+    revLevels = newSpace + ('*' * newStart)
     print(revLevels)
