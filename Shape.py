@@ -24,8 +24,3 @@ class Shape:
     def hekef(self,value):
         if value > 0:
             self.__hekef = value
-
-
-sh1 = Shape(20,50)
-sh1.area = 12
-print(sh1.area)
